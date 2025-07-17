@@ -51,6 +51,7 @@
 .brand{
     font-weight: 700;
     font-size: 2.8rem;
+    color: var(--btn-bg);
 }
 .nav-links{
     display: flex;
@@ -62,6 +63,7 @@
 }
 .nav-link{
     text-decoration: none;
+    color: #232323;font-size: 1.25rem;
 }
 
 
@@ -88,7 +90,6 @@ main{
 }
 .feature-title{
     font-size: 3rem;
-    text-align: center;
 }
 .feature-title .s1{
     color: var(--grey);
@@ -101,10 +102,16 @@ main{
     color: var(--btn-bg);
 }
 .feature-description{
-    text-align: center;
     margin-bottom: 30px;
     font-size: 1rem;
     color: var(--grey);
+}
+/* sponsor-section */
+.sponsor-section .feature-title{
+    text-align: center;
+}
+.sponsor-section .feature-description{
+    text-align: center;
 }
 /* Some fact */
 .fact-container{
@@ -149,8 +156,76 @@ footer p{
     color: var(--grey);
     font-size: 1rem;
 }
+.some-fact .feature-title{
+    text-align: center;
+}
+.some-fact .feature-description{
+    text-align: center;
+}
+/* enjoy-container */
+.enjoy-container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    gap: 50px;
+}
+/* enjoy-img */
+.enjoy-container .img{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.enjoy-container .enjoy-title{
+    border-left: 5px solid var(--btn-bg);
+    padding-left: 21px;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+}
+.enjoy-container p{
+    color: var(--grey);
+}
+
+.enjoy-container .box{
+
+    padding: 30px;
+    padding-right: 10;
+    box-shadow: 0 0 10px  rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.enjoy-container .box-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+.enjoy-container .box-description{
+    margin: 0;
+}
+
+.enjoy-container .btn-primary{
+    padding: 35px 32px;
+    margin-top: -60px;
+    margin-left: -40px;
+
+}
+.enjoy-container .btn-primary .year{
+    font-size: 3.1rem;
+}
+
 
 @media screen and (max-width:576px) {
+    .enjoy-container{
+        flex-direction: column;
+    }
+    .enjoy-container .img{
+        margin-top: 10px;
+    }
+    .enjoy-container{
+        margin-top: 10px;
+    }
+    .enjoy-container .btn-primary{
+        margin-left: 40px;
+    }
     .navbar, .nav-links{
         flex-direction: column;
     }
@@ -184,6 +259,7 @@ footer p{
     .sponsor-contaier img{
         margin: 0 auto 15px auto;
     }
+
 }
 
 /* medium device */
