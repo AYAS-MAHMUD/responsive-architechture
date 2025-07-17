@@ -88,6 +88,7 @@ main{
 }
 .feature-title{
     font-size: 3rem;
+    text-align: center;
 }
 .feature-title .s1{
     color: var(--grey);
@@ -100,6 +101,7 @@ main{
     color: var(--btn-bg);
 }
 .feature-description{
+    text-align: center;
     margin-bottom: 30px;
     font-size: 1rem;
     color: var(--grey);
@@ -132,9 +134,21 @@ main{
     font-size: 1.25rem;
     color: var(--grey);
 }
-
-
-
+.sponsor-contaier{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-between;
+}
+.sponsor-contaier img{
+    color: var(--grey);
+}
+footer p{
+    background-color: rgb(235, 231, 231);
+    padding: 10px;
+    text-align: center;
+    color: var(--grey);
+    font-size: 1rem;
+}
 
 @media screen and (max-width:576px) {
     .navbar, .nav-links{
@@ -161,10 +175,15 @@ main{
     .fact-card{
         margin: 0 auto;
     }
-    .some-fact .feature-title, .feature-description{
+    .some-fact,.sponsor-section .feature-title, .feature-description{
         text-align: center;
     }
-    
+    .sponsor-contaier{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsor-contaier img{
+        margin: 0 auto 15px auto;
+    }
 }
 
 /* medium device */
@@ -178,5 +197,21 @@ main{
     }
     .team-img{
         margin: 0 auto;
+    }
+    .fact-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .fact-card{
+        margin: 0 auto;
+    }
+    .some-fact,.sponsor-section .feature-title, .feature-description{
+        text-align: center;
+    }
+    .sponsor-contaier{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sponsor-contaier img{
+        margin: 0 auto 15px auto;
     }
 }
