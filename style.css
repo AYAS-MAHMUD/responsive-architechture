@@ -140,7 +140,7 @@ main{
     justify-content: space-between;
 }
 .sponsor-contaier img{
-    color: var(--grey);
+    filter: grayscale(100%);
 }
 footer p{
     background-color: rgb(235, 231, 231);
